@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1a2f54b4-6d8c-42aa-9f5c-2461cba5353e" name="Default" comment="分布式锁学习">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/xdclass-1024-shop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-1024-shop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/config/MybatisPlusPageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/config/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/constant/CacheKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/AddressStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/BizCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/ClientType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/CouponCategoryEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/CouponPublishEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/CouponStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/ProductOrderPayTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/ProductOrderStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/ProductOrderTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/enums/SendCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/exception/BizException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/model/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/util/CheckUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/util/CommonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/util/JWTUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/net/xdclass/util/JsonData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/config/MybatisPlusPageConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/config/SwaggerConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/constant/CacheKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/AddressStatusEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/BizCodeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/ClientType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/CouponCategoryEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/CouponPublishEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/CouponStateEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/ProductOrderPayTypeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/ProductOrderStateEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/ProductOrderTypeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/enums/SendCodeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/exception/BizException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/model/LoginUser$LoginUserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/model/LoginUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/util/CheckUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/util/CommonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/util/JWTUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/target/classes/net/xdclass/util/JsonData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/CouponApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/config/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/controller/CouponController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/controller/CouponRecordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/mapper/CouponMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/mapper/CouponRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/model/CouponDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/model/CouponRecordDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/request/NewUserCouponRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/service/CouponRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/service/CouponService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/service/impl/CouponRecordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/service/impl/CouponServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/vo/CouponRecordVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/vo/CouponVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/mapper/CouponMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/mapper/CouponRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/test/java/net/xdclass/db/MyBatisPlusGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/mapper/CouponMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/mapper/CouponRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/CouponApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/config/InterceptorConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/controller/CouponController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/controller/CouponRecordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/mapper/CouponMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/mapper/CouponRecordMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/model/CouponDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/model/CouponRecordDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/request/NewUserCouponRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/service/CouponRecordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/service/CouponService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/service/impl/CouponRecordServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/net/xdclass/vo/CouponRecordVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/config/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/controller/ProductOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/mapper/ProductOrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/mapper/ProductOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/model/ProductOrderDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/model/ProductOrderItemDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/request/ConfirmOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/service/ProductOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/service/impl/ProductOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/resources/mapper/ProductOrderItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/resources/mapper/ProductOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/src/test/java/net/xdclass/db/MyBatisPlusGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/mapper/ProductOrderItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/mapper/ProductOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/OrderApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/config/InterceptorConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/controller/ProductOrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/mapper/ProductOrderItemMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/mapper/ProductOrderMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/model/ProductOrderDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/model/ProductOrderItemDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/request/ConfirmOrderRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/service/ProductOrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/classes/net/xdclass/service/impl/ProductOrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-order-service/target/test-classes/net/xdclass/db/MyBatisPlusGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/ProductApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/config/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/controller/BannerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/mapper/BannerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/model/BannerDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/model/ProductDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/request/CartItemRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/service/BannerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/service/impl/BannerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/vo/BannerVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/vo/CartItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/vo/CartVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/net/xdclass/vo/ProductVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/resources/mapper/BannerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/resources/mapper/ProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/test/java/net/xdcalss/db/MyBatisPlusGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/mapper/BannerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/mapper/ProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/ProductApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/config/InterceptorConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/controller/BannerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/controller/CartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/mapper/BannerMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/mapper/ProductMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/model/BannerDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/model/ProductDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/request/CartItemRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/service/BannerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/service/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/service/impl/BannerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/service/impl/CartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/vo/BannerVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/vo/CartItemVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/vo/CartVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/net/xdclass/vo/ProductVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/target/test-classes/net/xdcalss/db/MyBatisPlusGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/component/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/component/impl/MailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/config/CaptchaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/config/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/config/OSSConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/controller/NotifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/fegin/CouponFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/model/AddressDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/model/UserDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/request/AddressAddReqeust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/request/NewUserCouponRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/request/UserLoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/request/UserRegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/NotifyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/impl/NotifyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/vo/AddressVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/net/xdclass/biz/AddressTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/net/xdclass/biz/MD5Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/net/xdclass/biz/MailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/net/xdclass/db/MyBatisPlusGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/mapper/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/UserApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/component/MailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/component/impl/MailServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/config/CaptchaConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/config/InterceptorConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/config/OSSConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/controller/AddressController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/controller/NotifyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/fegin/CouponFeignService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/mapper/AddressMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/model/AddressDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/model/UserDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/request/AddressAddReqeust.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/request/NewUserCouponRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/request/UserLoginRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/request/UserRegisterRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/service/AddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/service/FileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/service/NotifyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/service/impl/AddressServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/service/impl/FileServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/service/impl/NotifyServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/vo/AddressVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/net/xdclass/vo/UserVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/net/xdclass/biz/AddressTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/net/xdclass/biz/MD5Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/net/xdclass/biz/MailTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/net/xdclass/db/MyBatisPlusGenerator.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="master" />
+        <option value="wxy" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectId" id="24lyi0KpqAyNP06eiFNCo9mNOON" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/xdclass/Desktop/code/xdclass-1024-shop/xdclass-product-service/src/main/java/net/xdclass/vo/CartVO.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.xdclass.request" />
+      <recent name="net.xdclass.config" />
+      <recent name="net.xdclass" />
+      <recent name="net.xdclass.db" />
+      <recent name="net.xdclass.vo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/controller" />
+      <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/model" />
+      <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/java/net/xdclass/mapper" />
+      <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/resources/mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CouponApplication-9002">
+    <configuration name="CouponServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.xdclass.service.impl.CouponServiceImpl" />
+      <module name="xdclass-coupon-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.xdclass.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisPlusGenerator (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.xdclass.db.MyBatisPlusGenerator" />
+      <module name="xdclass-order-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.xdclass.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.xdcalss.db.MyBatisPlusGenerator" />
+      <module name="xdclass-product-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.xdcalss.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.xdclass.ProductApplication" />
+      <module name="xdclass-product-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.xdclass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CouponApplication-9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xdclass-coupon-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.xdclass.CouponApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9002" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-order-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.xdclass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.xdclass.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xdclass-product-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.xdclass.ProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xdclass-user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.xdclass.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MyBatisPlusGenerator" />
+      <item itemvalue="Application.ProductApplication" />
+      <item itemvalue="Application.MyBatisPlusGenerator (2)" />
+      <item itemvalue="Application.CouponServiceImpl" />
+      <item itemvalue="Spring Boot.CouponApplication-9002" />
+      <item itemvalue="Spring Boot.ProductApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CouponServiceImpl" />
+        <item itemvalue="Spring Boot.OrderApplication" />
+        <item itemvalue="Application.MyBatisPlusGenerator (2)" />
+        <item itemvalue="Application.ProductApplication" />
+        <item itemvalue="Application.MyBatisPlusGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a2f54b4-6d8c-42aa-9f5c-2461cba5353e" name="Default" comment="" />
+      <created>1611570601812</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611570601812</updated>
+      <workItem from="1611570603128" duration="1952000" />
+      <workItem from="1611574935212" duration="1754000" />
+      <workItem from="1611586711243" duration="1143000" />
+      <workItem from="1611627106565" duration="13803000" />
+      <workItem from="1612054209760" duration="7567000" />
+      <workItem from="1612623581711" duration="4000" />
+      <workItem from="1612664522210" duration="7312000" />
+      <workItem from="1613961317422" duration="4786000" />
+      <workItem from="1614172927533" duration="1974000" />
+      <workItem from="1644219610705" duration="747000" />
+      <workItem from="1644653553394" duration="1799000" />
+      <workItem from="1644724336632" duration="1859000" />
+      <workItem from="1646493875553" duration="42000" />
+      <workItem from="1647524906693" duration="1007000" />
+      <workItem from="1648962257242" duration="636000" />
+      <workItem from="1649068879094" duration="26000" />
+      <workItem from="1655627138164" duration="607000" />
+      <workItem from="1656139673340" duration="295000" />
+      <workItem from="1656143510200" duration="875000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="分布式锁学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="分布式锁学习" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="167" y="26" key="CommitChangelistDialog2" timestamp="1656144138349">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="167" y="26" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1656144138349" />
+    <state x="501" y="186" key="FileChooserDialogImpl" timestamp="1656144383463">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="501" y="186" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1656144383463" />
+    <state x="545" y="331" width="351" height="256" key="Gitee.ShareDialog" timestamp="1656144374601">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="545" y="331" width="351" height="256" key="Gitee.ShareDialog/0.0.1440.860@0.0.1440.860" timestamp="1656144374601" />
+    <state x="201" y="5" key="SettingsEditor" timestamp="1656143628500">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="201" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1656143628500" />
+    <state x="313" y="164" key="Vcs.Push.Dialog.v2" timestamp="1656144128099">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="313" y="164" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1656144128099" />
+    <state x="405" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1656139672562">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="405" y="255" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1656139672562" />
+    <state x="551" y="222" key="svn.repositoryBrowser" timestamp="1656144151555">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="551" y="222" key="svn.repositoryBrowser/0.0.1440.860@0.0.1440.860" timestamp="1656144151555" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-user-service/src/test/java/net/xdclass/biz/AddressTest.java</url>
+          <line>35</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/net/xdclass/service/impl/UserServiceImpl.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/controller/CouponController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-coupon-service/src/main/java/net/xdclass/controller/CouponController.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
